@@ -55,7 +55,7 @@ def update():
 #
 # So the only service left running is the Raspberry pi CPU temperature.
 #
-    update_rpi()
+#   update_rpi()
     update_W1()
 #    update_i2c()
     update_adc()
