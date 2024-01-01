@@ -58,7 +58,7 @@ def update():
 #   update_rpi()
     update_W1()
 #    update_i2c()
-#   update_adc()
+#  update_adc()
     return True
 
 # update i2c interface values
@@ -390,7 +390,7 @@ base = 'com.victronenergy'
 #dbusservice['adc-temp7']   ['/ProductName']     = 'Custard Pi-3 8x12bit adc'
 
 # Raspy CPU Temp
-dbusservice['cpu-temp'] = new_service(base, 'temperature', 'RPi_cpu', 'Raspberry Pi OS', SCount+1, 100, SCount+1)
+# ['cpu-temp'] = new_service(base, 'temperature', 'RPi_cpu', 'Raspberry Pi OS', SCount+1, 100, SCount+1)
 # Tidy up custom or missing items
 if os.path.exists('/sys/firmware/devicetree/base/model'):
     with open('/sys/firmware/devicetree/base/model', 'r') as f:
